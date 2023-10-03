@@ -1,0 +1,80 @@
+.container.weather {
+    margin: 2rem;
+    text-align: center;
+}
+
+
+.input {
+    background: #020031;
+    max-width: 780px;
+    /* width: 500px; */
+    margin: auto;
+    padding: .4rem;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.input input {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 0.6rem;
+}
+
+.input button {
+    padding: .6rem 1.3rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+}
+
+.input button:hover {
+    cursor: pointer;
+}
+
+.info {
+    margin: 4rem auto;
+    background: #030042;
+    color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+p.output_p {
+    font-size: 22px;
+    text-align: center;
+}
+
+span.output_city {
+    font-weight: bolder;
+    font-size: 25px;
+}
+h5.output_temp {
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.info .date {
+    background: #020031;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.output {
+    min-height: 250px;
+    text-align: start;
+    padding: 1rem;
+}
+
+img.temp_icon {
+    object-fit: cover;
+    margin: 0 auto;
+    display: flex;
+}

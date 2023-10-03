@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background: #020031;
+}
+
+.logo a {
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+ul.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    transition: .5s;
+}
+
+
+ul.navbar li a:hover {
+    color: bisque;
+}

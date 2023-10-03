@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    {{>header}}
+    <div class="container weather">
+
+      <form class="input">
+        <input class="input_city" placeholder="Type the city you want to see" type="text" />
+        <button class="submit_btn" type="submit">Search</button>
+      </form>
+
+      <div class="info">
+        <div class="date">
+          <h3 class="date_day">Sunday</h3>
+         <h5 class="date_d_m">01 oct</h5>
+        </div>
+        <div class="output">
+          <p class="output_p">Search something</p>
+          <h5 class="output_temp"></h5>
+          <img class="temp_icon" src="" alt="">
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+
+    <script src="js/weather.js"></script>
+  </body>
+</html>

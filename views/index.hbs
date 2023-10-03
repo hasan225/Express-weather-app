@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Document</title>
+  
+</head>
+<body>
+    {{>header}}
+    <main class="container">
+             <div class="left">
+              <h4>Welcome to hello world</h4>
+              <h2>Get the latest update from your area</h2>
+              <a href="/weather" class="button">Checkout</a>
+             </div>
+  
+               <!-- Swiper -->
+  <div class="swiper mySwiper right">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://img.freepik.com/free-vector/male-animator-sitting-computer-desk-creating-project-graphic-motion-designer-sitting-workplace-studio-developing-web-game-flat-vector-illustration-design-art-concept_74855-22510.jpg?size=626&ext=jpg" alt="">
+      </div>
+
+      <div class="swiper-slide"><img src="https://img.freepik.com/free-vector/computer-animation-abstract-concept-illustration_335657-2142.jpg?size=626&ext=jpg" alt=""></div>
+
+      <div class="swiper-slide"><img src="https://img.freepik.com/premium-vector/online-webinar-concept_118813-4949.jpg?size=626&ext=jpg" alt=""></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+
+    </main>
+    {{>footer}}
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+        var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
